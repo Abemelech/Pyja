@@ -1,3 +1,20 @@
+import json
+
+def access_file_function():
+  '''
+  A funciton that access json file which includes the dicitonary of all the
+  search results
+  '''
+  
+  # Reads the json file
+  with open('file.json','r') as file:
+        # Creates a new dictionary
+        syn_dict = json.load(file)
+        
+    # Return dictionary
+    return syn_dict
+
+syn_dict = access_file_function()
 
 def userInput():
     ''' A function to get user input from user 
@@ -15,8 +32,6 @@ def main():
 
     # Users search
     userSearch = userInput()
-
-
 
 
 main()

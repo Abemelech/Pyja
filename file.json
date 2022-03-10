@@ -1,0 +1,4 @@
+{"print":["print(statement)","System.out.println(statment);"],
+"if":["if(parameter):\n\tstatement","if(parameter){\n\tstatement;\n}"],
+"elif":["elif(parameter):\n\tstatement","else if(parameter){\n\tstatement;\n}"]
+}
