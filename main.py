@@ -13,7 +13,7 @@ def access_file_function():
     # Return dictionary
     return syn_dict
 
-def userInput():
+def user_input():
     ''' A function to get user input from user 
     and return their input as a string''' 
 
@@ -24,14 +24,23 @@ def userInput():
     return userIn   
 
 
+def search(syn_dict,userSearch):
+    '''Searches the dicitinoary and returns the list of python and java equivalent of the given syntax'''
+    return syn_dict[userSearch]
+
 def main():
     ''' The main function that will get executed'''
 
     # Users search
-    userSearch = userInput()
+    userSearch = user_input()
 
     # Save dictionary
     syn_dict = access_file_function()
+    
+    #return list of java and python syntax
+    syn_list = search(syn_dict,userSearch)
+
+
 
 
 
